@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap');
+
+:root {
+    --color-gray: #0d63bf;
+    --color-white: #fff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: var(--color-gray);
+
+    padding: 20px 20px;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: auto;
+    margin-left: 50px;
+
+    background: var(--color-gray);
+}
+
+.links a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid var(--color-white);
+}
+
+.links a {
+	-webkit-animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}   
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: auto;
+}
+
+.input {
+    margin: auto;
+    display: flex;
+    width: 50%; 
+    background-color: var(--color-white);
+}
+
+.input input {
+    float: left;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.search button {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    margin: auto;
+    margin-left: auto;
+}
+
+.search img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.admin {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 5px 20px;
+    border: 1px solid var(--color-white);
+}
+
+.admin img {
+    margin: auto;
+    width: 25px;
+    height: 25px;
+}
+
+.admin a {
+    margin: auto;
+    margin-left: 5px;
+    color: var(--color-white);
+    text-decoration: none;
+}
