@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- It's For Head table  -->
+{% for head in h %}
+<div>
+  <h1>{{ head.title }}</h1>
+  <p>{{ head.body }}</p>
+  <p>{{ head.timestamp }}</p>
+</div>
+{% endfor %}
+
+<!-- It's For Body Table -->
+{% for body in b %}
+<div>
+  <h1>{{ body.sec_title }}</h1>
+  <p>{{ body.sec_body }}</p>
+  <p>{{ body.timestamp }}</p>
+</div>
+{% endfor %}
+
+<!-- It's For Footer Table -->
+{% for footer in f %}
+<div>
+  <h1>{{ footer.third_title }}</h1>
+  <p>{{ footer.third_body }}</p>
+  <p>{{ footer.third_timestamp }}</p>
+</div>
+{% endfor %}
+{% endblock %}

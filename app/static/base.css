@@ -14,7 +14,7 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     height: auto;
     background: var(--color-gray);
 
@@ -42,8 +42,8 @@ body {
 
 .links {
     display: flex;
-    justify-content: space-between;
-    width: 25%;
+    /* justify-content: space-between; */
+    width: auto;
     margin-right: auto;
     margin-left: 50px;
 
@@ -54,13 +54,14 @@ body {
     color: var(--color-white);
     text-decoration: none;
     padding: 10px 30px;
+    margin-left: 2px;
     border: 1px solid var(--color-white);
 }
 
 .links a {
 	-webkit-animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 	animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}   
+}
 
 .search {
     display: flex;
@@ -72,7 +73,7 @@ body {
 .input {
     margin: auto;
     display: flex;
-    width: 50%; 
+    width: 50%;
     background-color: var(--color-white);
 }
 
