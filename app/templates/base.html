@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/base.css">
+    <title>Visit Website</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1> Ashgabat Mall </h1>
+        </div>
+
+        <div class="navbar">
+            <div class="links">
+                <a href="{{ url_for('index') }}"> Main </a>
+                {% if current_user.is_anonymous %}
+                <a href="{{ url_for('login') }}"> Login </a>
+                {% else %}
+                <a href="{{ url_for('logout') }}"> Logout </a>
+                <a href="{{ url_for('register') }}"> New admin </a>
+                {% endif %}
+            </div>
+
+            <div class="search">
+                <div class="input">
+                    <input placeholder="Search" type="text">
+                    <button><img src="../static/img/search.png"></button>
+                </div>
+                {% if current_user.is_anonymous %}
+                {% else %}
+                <div class="admin">
+                    <img src="../static/img/admin.png">
+                    <a href="/admin"> Admin </a>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% block content %}{% endblock %}
+</body>
+</html>
